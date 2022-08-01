@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+    --fontePrincipal: 'Press Start 2P', cursive;
+    --fonteSecundaria: Bungee, arial;
+    --fonteCursiva: Great Vibes;
+    --azul: #042940;
+    --verdeEscuro: #005C53;
+    --verdeClaro: #9FC131;
+    --fundo: #9fc13194;
+    --cinza: #8dcbf298;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* COMPUTADOR */
+
+/* LAYOUT */
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+header {
+    align-content: space-between;
+    font-family: var(--fonteSecundaria);
+}
+
+#conteudoLateral {
+    flex-direction: column;
+    width: 300px;
+}
+
+/* MENU DROPDOWN */
+div#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+h2 {
+    font-family: system-ui, sans-serif;
+    background-color: gray;
+    border-top: 5px solid var(--verdeClaro);
+    border-left: 5px solid var(--verdeClaro);
+    padding: 5px;
+    border-top-right-radius: 10px;
+
+}
+
+#conteudoDropdown {
+    display: none;
+    z-index: -1;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: system-ui, sans-serif;
+
+}
+
+#dropdown:hover #conteudoDropdown {
+    display: inline-block;
+}
+
+#conteudoDropdown>ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+#conteudoDropdown>ul>li {
+    padding: 10px;
+}
+
+#conteudoDropdown>ul>li:hover {
+    border-left: 5px solid var(--verdeClaro);
+}
+
+#conteudoDropdown>ul>li>a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+/* TEXTO TOPO */
+#textoTopo {
+    font-family: var(--fonteCursiva);
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    text-indent: 10px;
+    margin-top: 20px;
+}
+
+#textoTopo img {
+    float: right;
+    border-radius: 300px;
+    margin-right: 10px;
+}
+
+main {
+    width: 500px;
+    margin: 0 10px 0px 10px;
+    font-family: var(--fontePrincipal);
+}
+
+
+#TelaInicio {
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--azul);
+}
+
+#caixaImagemNeymar {
+    align-items: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#caixaImagemNeymar img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#caixaImagemNeymar>p {
+    text-indent: 10px;
+    text-align: center;
+}
+
+#botoes,
+#btnReiniciar,
+#reacaoNeymar {
+    display: none;
+}
+
+#botoesInicio {
+    margin-top: 10px;
+}
+
+#botoesInicio button {
+    background-color: var(--cinza);
+    border-radius: 5px;
+    width: 220px;
+    padding: 5px;
+    font-family: var(--fonteTitulo);
+}
+
+#botoesInicio button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+#botoes {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#containerBotoes {
+    width: 450px;
+    margin: auto;
+}
+
+#containerBotoes>input {
+    width: 70px;
+    height: 70px;
+    margin-left: 4px;
+    border-radius: 5px;
+    background-color: var(--verdeClaro);
+    font-family: var(--fontePrincipal);
+    color: black;
+}
+
+#containerBotoes>input:hover {
+    font-size: 30px;
+}
+
+#containerBotoes>input:focus {
+    background-color: black;
+    color: white;
+}
+
+#reacaoNeymar {
+    margin-top: 20px;
+    align-items: center;
+    text-indent: 10px;
+    font-family: var(--fontePrincipal);
+    border: 4px solid salmon;
+    border-style: dotted;
+    height: fit-content;
+    width: fit-content;
+}
+
+#reacaoNeymar>img {
+    float: left;
+}
+
+#reacaoNeymar>p {
+    float: left;
+    margin-left: 10px;
+}

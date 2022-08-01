@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de Neymar</title>
+    <link rel="shortcut icon" href="imagens/bandeira-do-brasil.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container flex">
+        <img src="imagens/bandeira-do-brasil.png" alt="Bandeira do Brasil">
+        <h1>JOGOSDENEYMAR.COM</h1>
+    </header>
+
+    <div class="container flex">
+        <div id="conteudoLateral" class="flex">
+            <div id="dropdown">
+                <h2>Mais jogos de Neymar ^</h2>
+                <div id="conteudoDropdown">
+                    <ul>
+                        <li><a href="#">Neymar Cadeira de Rodas 2</a></li>
+                        <li><a href="#">Neymar Guess The Number Game</a></li>
+                        <li><a href="#">Neymar Arsenal</a></li>
+                        <li><a href="#">Neymar Free Kick</a></li>
+                        <li><a href="#">Neymar Outfit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="textoTopo">
+                <img src="imagens/franca.webp" alt="França">
+                <p>Je vous salue, Marie pleine de grâce,
+                    le Seigneur est avec toi,
+                    Tu es bénie entre toutes les femmes et,
+                    Jésus.
+                    Le fruit de tes entrailles, est béni.
+                    Sainte Marie, Mère de Dieu,
+                    prie pour nous, pauvres pécheurs,
+                    maintenant et à l’heure de notre mort,
+                    Ainsi soit-il.</p>
+            </div>
+        </div>
+
+        <main>
+            <div id="TelaInicio" class="flex">
+                <div id="caixaImagemNeymar" class="flex">
+                    <img src="imagens/neymarPergunta.jpg" alt="Neymar entrevista" id="imagemNeymar">
+                    <p>Neymar diz:</p>
+                    <p id="textoInicio">Pensei em um número hahaha... Podes adivinhar? (4 tentativas)</p>
+                </div>
+                <div id="botoesInicio">
+                    <button id="btnAceitar">Aceitar desafio!</button>
+                    <button id="btnRecusar">Recusar</button>
+                    <button id="btnReiniciar">REINICIAR</button>
+                </div>
+            </div>
+            <div id="botoes">
+                <div id="containerBotoes" class="flex">
+                    <input type="button" onclick="enviarNum(0)" value="0"></input>
+                    <input type="button" onclick="enviarNum(1)" value="1"></input>
+                    <input type="button" onclick="enviarNum(2)" value="2"></input>
+                    <input type="button" onclick="enviarNum(3)" value="3"></input>
+                    <input type="button" onclick="enviarNum(4)" value="4"></input>
+                    <input type="button" onclick="enviarNum(5)" value="5"></input>
+                    <input type="button" onclick="enviarNum(6)" value="6"></input>
+                    <input type="button" onclick="enviarNum(7)" value="7"></input>
+                    <input type="button" onclick="enviarNum(8)" value="8"></input>
+                    <input type="button" onclick="enviarNum(9)" value="9"></input>
+                    <input type="button" onclick="enviarNum(10)" value="10"></input>
+                </div>
+            </div>
+        </main>
+
+        <div id="reacaoNeymar" class="flex">
+            <img src="imagens/neymarDiz.png" alt="Neymar Diz:" id="imgReacao">
+            <p id="textoReacao"></p>
+        </div>
+    </div>
+
+</body>
+
+<script src="script copy.js"></script>
+
+</html>
