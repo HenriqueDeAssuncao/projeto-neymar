@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-@media(max-width: 576px) {
-    .container {
-        flex-direction: column;
-}
-
 :root {
     --fontePrincipal: 'Press Start 2P', cursive;
     --fonteSecundaria: Bungee, arial;
